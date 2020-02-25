@@ -10,6 +10,8 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -28,6 +30,7 @@ public class MainController<event> implements Initializable {
     public JFXTextField pathway;
     public JFXButton scan;
     public JFXTextArea log;
+    public Text pass;
 
     private Stage primaryStage;
 
@@ -58,7 +61,12 @@ public class MainController<event> implements Initializable {
                 String line = "";
                 while ((line = bfr.readLine()) != null) {
                     log.appendText( line+ System.lineSeparator());
-
+                    log.setScrollTop(Double.MAX_VALUE);
+                    if(line.contains("ERROR") ){
+                        pass.setText("BIBS validator failed ");
+                        pass.setFill(Color.RED);
+                    }
+                    pass.setVisible(true);
                 }
             } catch (Exception eX) {
                 System.out.println(eX);

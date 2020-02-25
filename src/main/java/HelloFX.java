@@ -21,12 +21,12 @@ public class HelloFX extends Application {
             // Chargement du FXML.
 
             // Création de la scène.
-            final Scene scene = new Scene(root, 710, 544);
+            final Scene scene = new Scene(root, 710, 555);
             primaryStage.setScene(scene);
         } catch (IOException ex) {
             System.err.println("Erreur au chargement: " + ex);
         }
-        primaryStage.setTitle("Test FXML");
+        primaryStage.setTitle("Bids validator A");
         primaryStage.show();
     }
 
@@ -36,10 +36,6 @@ public class HelloFX extends Application {
     }
 
     public abstract static class MainController implements Initializable {
-
-
-
-
 
         private void onButtonActivated() {
             System.out.println("Salut le monde !");
