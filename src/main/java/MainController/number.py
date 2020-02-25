@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8 -*-
 import os
 import errno
 import json
 import sys
+import re
+
 
 def path_hierarchy(path):
     hierarchy = {
@@ -31,21 +33,36 @@ def get_name_in_dir(list_dict, names):
 
         if my_dict['type'] == 'directory':
             names.append(my_dict['name'] )
-
-
-            #print (my_dict)
-
             names = get_name_in_dir(my_dict['children'], names)
 
     return names
 
 def verify_name(names):
 
+    if (names[0]=="data" or names[0]=="Data"):
+        print("Folder Data found ")
+    else :
+        print("ERROR :  Data folder not found")
 
-    if
+    if "sub-" in str(names[2]):
+        print("Folder Name found ")
+    else :
+        print("ERROR :  Folder name does no contain sub-.... ")
 
+    if re.search("^\d{6}_\d{3}_([[a-zA-Z]{1})_([a-zA-Z]*)_([a-zA-Z]*)", names[3]):
+        print ("Date format ok ")
+    else :
+        print("ERROR : Folder name does no contain /Date[yymmdd] _ numéro de session (expérience) _ espèce [m, o, r, s] _ UFID animal(User friendly ID) _ commentaire ")
 
+    if "source " or "Sources" in names :
+        print ( "Folder Sources Found ")
+    else :
+        print("ERROR : Folder Sources not found")
 
+    if "META-DATA" or "META-DATA" in names :
+         print ( "Folder META-DATA Found ")
+    else :
+         print("WARNING : Folder META-DATA not found")
 
 
 
@@ -67,5 +84,9 @@ if __name__ == '__main__':
     names = []
     names = get_name_in_dir([dic_data], names)
     arr=[]
+    print( "\n")
     print ("list of folder : ")
+
     print( u" ".join(names))
+    print( "\n")
+    verify_name(names)

@@ -44,6 +44,7 @@ public class MainController<event> implements Initializable {
             selectedDirectory[0] = directoryChooser.showDialog(primaryStage);
             pathway.setText(selectedDirectory[0].getAbsolutePath());
             System.out.println(selectedDirectory[0].getAbsolutePath());
+            log.setScrollTop(Double.MAX_VALUE);
         });
 
         scan.setOnAction(e -> {
