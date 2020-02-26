@@ -5,31 +5,44 @@ import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.DirectoryChooser;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.stage.Window;
-
-
 import java.io.*;
 import java.net.URL;
-
 import java.util.ResourceBundle;
 
+
+/**
+ * The type Main controller.
+ *
+ * @param <event> the type parameter
+ */
 public class MainController<event> implements Initializable {
 
+    /**
+     * The Browse.
+     */
     @FXML
     public JFXButton browse;
+    /**
+     * The Pathway.
+     */
     public JFXTextField pathway;
+    /**
+     * The Scan.
+     */
     public JFXButton scan;
+    /**
+     * The Log.
+     */
     public JFXTextArea log;
+    /**
+     * The Pass.
+     */
     public Text pass;
 
     private Stage primaryStage;

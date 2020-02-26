@@ -31,10 +31,19 @@ public class HelloFX extends Application {
     }
 
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
 
+    /**
+     * The type Main controller.
+     * Test controler not used
+     */
     public abstract static class MainController implements Initializable {
 
         private void onButtonActivated() {
