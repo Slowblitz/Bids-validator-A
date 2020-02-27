@@ -1,0 +1,37 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="hellofx:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/hellofx_jar</output-path>
+    <root id="archive" name="hellofx.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="hellofx.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-lifecycle/3.6.0/7a8815f164b52595f6e917e960789350f9a6e485/charm-down-plugin-lifecycle-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-push-notifications/3.6.0/8c63a7408ba6d0d1636fcb8e06caa18401cdb538/charm-down-plugin-push-notifications-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-runtime-args/3.6.0/2ed63c171004e0244ff996947bff8d60369bcf1/charm-down-plugin-runtime-args-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/13/6cd7169d2a729846c35fba9dc65af23a10ca253b/javafx-controls-13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm/4.4.1/a26154d093f8c5aca57886b63fe7881c2d954bad/charm-4.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-display/3.6.0/8fdb015bff6946d59a5b67bc31a74a049f0dbbae/charm-down-plugin-display-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-statusbar/3.6.0/7bbd98fb6166b811eae2e6a0d10759c23d7e5051/charm-down-plugin-statusbar-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/13/43c52e1d11b38514e9d2421ad98ca6a35de12b0/javafx-base-13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jfoenix/jfoenix/9.0.8/b5a497c80b2ea69e9a68ad81d866ea3c7b7a08d9/jfoenix-9.0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/3178f73569fd7a1e5ffc464e680f7a8cc784b85a/javax.json-1.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-core/3.6.0/a1f6ac7cacbc5beb89ed0494343b823fc7b08e80/charm-down-core-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/13/2c1016c361ce5797927e9e14847fbca9bebf3bd5/javafx-fxml-13-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.0/adaee84c60e0705cf39df8b9fedfab100d3faf2/log4j-api-2.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-glisten/4.4.1/7bdb2fab385f250b2821c206ea669ff65a1c9ad6/charm-glisten-4.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/13/d853d12684f60037dfeea1a47e61396e0febfdfd/javafx-graphics-13-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.13.0/57b8b57dac4c87696acb4b8457fd8cbf4273d40d/log4j-core-2.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/13/a9407212df2b75d557a509ec14a9e8e282494b4e/javafx-graphics-13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-device/3.6.0/4461e5ffc3fcb4b9c8f4957df7438c1b9d5c6710/charm-down-plugin-device-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/13/828b1e1a35104bb0f26a347c2716d553ca4cf4d2/javafx-base-13-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-glisten-connect-view/4.4.1/d90793452c17d5a385519216d069271fc8cee76/charm-glisten-connect-view-4.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/connect/1.4.3/6421e849ffdfd632af6f99637e1a2bcf720fce47/connect-1.4.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-storage/3.6.0/94eff30c17ebe2860e9eeb521afd45247a4310f8/charm-down-plugin-storage-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-cloudlink-client/4.4.4/ab93cd0caf4a8c64678074dc11462f610fb426ef/charm-cloudlink-client-4.4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/13/bcedf8eb6e11c2a7908b3126004d41274f6334f3/javafx-controls-13-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gluonhq/charm-down-plugin-in-app-billing/3.6.0/6c2e4b48dc9018176a2595f446a37527d809e742/charm-down-plugin-in-app-billing-3.6.0.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>

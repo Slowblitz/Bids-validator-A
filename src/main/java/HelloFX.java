@@ -25,6 +25,7 @@ public class HelloFX extends Application {
             primaryStage.setScene(scene);
         } catch (IOException ex) {
             System.err.println("Erreur au chargement: " + ex);
+
         }
         primaryStage.setTitle("Bids validator A");
         primaryStage.show();

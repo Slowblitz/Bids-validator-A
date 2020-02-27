@@ -3,6 +3,7 @@ package MainController;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
+
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -11,8 +12,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
+
+import javax.annotation.processing.Filer;
 import java.io.*;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 
@@ -46,6 +50,7 @@ public class MainController<event> implements Initializable {
     public Text pass;
 
     private Stage primaryStage;
+    private Object ActionEvent;
 
 
     @Override
@@ -65,8 +70,9 @@ public class MainController<event> implements Initializable {
 
         scan.setOnAction(e -> {
             try {
+
                 ProcessBuilder pb = new ProcessBuilder("python",
-                        "/home/garcia.j/fxml/samples/HelloFX/Gradle/hellofx/src/main/java/MainController/number.py",
+                      "number.py",
                         selectedDirectory[0].getAbsolutePath());
 
                 Process p = pb.start();
@@ -87,14 +93,11 @@ public class MainController<event> implements Initializable {
             log.setScrollTop(Double.MAX_VALUE);
         });
 
-        log.textProperty().addListener(new ChangeListener<Object>() {
-            @Override
-            public void changed(ObservableValue<?> observable, Object oldValue,
-                                Object newValue) {
-                log.setScrollTop(Double.MAX_VALUE); //this will scroll to the bottom
-                //use Double.MIN_VALUE to scroll to the top
-            }
+        log.textProperty().addListener((ChangeListener<Object>) (observable, oldValue, newValue) -> {
+            log.setScrollTop(Double.MAX_VALUE); //this will scroll to the bottom
+            //use Double.MIN_VALUE to scroll to the top
         });
+
 
 
 

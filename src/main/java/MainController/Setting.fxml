@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0F8B8D;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="MainController.MainController">
+   <JFXButton layoutX="208.0" layoutY="354.0" prefHeight="26.0" prefWidth="185.0" style="-fx-background-color: #EC9A29;"
+              text="Save "/>
+   <JFXTextField layoutX="165.0" layoutY="87.0" prefHeight="26.0" prefWidth="271.0"/>
+   <JFXTextField layoutX="165.0" layoutY="174.0" prefHeight="26.0" prefWidth="271.0"/>
+   <JFXRadioButton layoutX="110.0" layoutY="241.0"/>
+   <JFXRadioButton layoutX="366.0" layoutY="241.0" text="RadioButton"/>
+   <JFXButton layoutY="1.0" prefHeight="39.0" prefWidth="109.0" text="Scaner"/>
+   <JFXButton layoutX="110.0" layoutY="1.0" prefHeight="39.0" prefWidth="109.0" text="Automate"/>
+</AnchorPane>
